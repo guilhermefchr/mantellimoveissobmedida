@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mantelli Móveis Planejados - Qualidade e sofisticação ao seu alcance. Fabrição própria e marcenaria tradicional há mais de 35 anos.">
+    <title>Mantelli Móveis Planejados | Alta Pradrão sob Medida</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload Imagens Hero LCP (Largest Contentful Paint) -->
+    <link rel="preload" as="image" href="img/Hero%20Desktop.webp" media="(min-width: 993px)">
+    <link rel="preload" as="image" href="img/Hero%20Mobile.webp" media="(max-width: 992px)">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header fixo e elegante -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo.webp" alt="Mantelli Móveis Planejados">
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#sobre">Diferenciais</a>
+                <a href="#empresa">A Mantelli</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#cotação" class="btn btn-primary open-modal-btn">Fazer Cotação</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-mobile-img-wrapper reveal">
+                <img src="img/Hero%20Mobile.webp" alt="Mantelli Móveis Planejados" class="hero-mobile-img"
+                    fetchpriority="high" decoding="async">
+            </div>
+
+            <div class="hero-text-block">
+                <h1>Qualidade e Sofisticação<br>ao Seu Alcance</h1>
+                <p>Mais de 35 anos unindo a marcenaria tradicional à tecnologia alemã em Santo André. Projetos de alto
+                    padrão com fábrica própria.</p>
+
+                <div class="hero-proof">
+                    <div class="stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <span>Mais de <strong>1.000 clientes satisfeitos</strong> atestam nossa qualidade.</span>
+                </div>
+
+                <a href="#cotação" class="btn btn-large btn-glow open-modal-btn">Solicite seu Orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceiros Banner -->
+    <section class="partners">
+        <div class="container partners-flex">
+            <span>Marcas parceiras e componentes premium:</span>
+            <div class="partners-logos">
+                <img src="https://www.mantellimoveis.com.br/wp-content/uploads/2021/04/blum.png" alt="Blum"
+                    class="partner-logo" loading="lazy" decoding="async">
+                <img src="https://www.mantellimoveis.com.br/wp-content/uploads/2021/04/hafele.png" alt="Hafele"
+                    class="partner-logo" loading="lazy" decoding="async">
+                <img src="https://www.mantellimoveis.com.br/wp-content/uploads/2021/04/arauco.png" alt="Arauco"
+                    class="partner-logo" loading="lazy" decoding="async">
+                <img src="https://www.mantellimoveis.com.br/wp-content/uploads/2021/04/duratex.png" alt="Duratex"
+                    class="partner-logo" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços e Diferenciais -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Excelência em Marcenaria</h2>
+                <p>O melhor para o seu projeto, do residencial ao corporativo, incluindo suporte completo para
+                    arquitetos e designers.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Linha Residencial</h3>
+                    <p>Cozinhas, dormitórios, banheiros e áreas gourmet pensados para máximo aproveitamento, beleza e
+                        funcionalidade no seu lar.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 100ms;">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Linha Comercial</h3>
+                    <p>Lojas, clínicas e ambientes empresariais robustos, destacando sua marca com acabamento impecável.
+                    </p>
+                </div>
+                <div class="card reveal" style="transition-delay: 200ms;">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="5" r="3"></circle>
+                            <path d="M10 7.8L5 20l2 1.5 3-8"></path>
+                            <path d="M14 7.8L19 20l-2 1.5-3-8"></path>
+                            <path d="M8 15h8"></path>
+                        </svg>
+                    </div>
+                    <h3>Arquitetos & Parceiros</h3>
+                    <p>Fabricação sob medida, com foco na transparência e qualidade que os profissionais exigem para
+                        seus clientes.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 300ms;">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2 20h20"></path>
+                            <path d="M4 20V8l7-4 7 4v12"></path>
+                            <path d="M10 20v-5h4v5"></path>
+                            <path d="M13 10V6l-3 2"></path>
+                            <path d="M17 12V8l-3 2"></path>
+                        </svg>
+                    </div>
+                    <h3>Fábrica Própria</h3>
+                    <p>Infraestrutura moderna e equipe própria em Santo André, SP. Sem terceirizações. Garantia total da
+                        sua execução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa & Números -->
+    <section class="company-about" id="empresa">
+        <div class="container company-grid">
+            <div class="company-text reveal">
+                <h2>Marcenaria Tradicional de Alta Performance</h2>
+                <p>Desde 1989, a Mantelli transforma madeira em obras de arte funcionais. Nossa fábrica própria em Santo
+                    André conta com o que há de mais moderno em tecnologia alemã, garantindo cortes milimétricos,
+                    fitamento a laser e acabamento impecável.</p>
+
+                <div class="stats-row mt-4">
+                    <div class="stat-item">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="35">0</span>
+                        </div>
+                        <span class="stat-label">Anos de Tradição</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="1000">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                        </div>
+                        <span class="stat-label">Fábrica Própria</span>
+                    </div>
+                </div>
+
+                <a href="#cotação" class="btn btn-primary mt-4 open-modal-btn">Fazer meu Projeto 3D</a>
+            </div>
+            <div class="company-image reveal" style="transition-delay: 200ms;">
+                <img src="img/A%20Mantelli.webp" alt="Fábrica e Escritório Mantelli" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- Jornada do Cliente -->
+    <section class="journey" id="jornada">
+        <div class="container">
+            <div class="section-title text-center reveal">
+                <h2>A Sua Jornada Conosco</h2>
+                <p>Transparência total desde o primeiro contato até a montagem final.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h3>Briefing e Entendimento</h3>
+                        <p>Avaliamos sua planta e suas necessidades detalhadamente para criar uma proposta assertiva.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 100ms;">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h3>Projeto 3D</h3>
+                        <p>Apresentação do seu ambiente em modelagem 3D hiper-realista para aprovação do design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 200ms;">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h3>Produção na Fábrica</h3>
+                        <p>Corte e acabamento com maquinário alemão em nossa fábrica própria em Santo André
+                            (visite-nos!).</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 300ms;">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <h3>Montagem Limpa</h3>
+                        <p>A nossa própria equipe fará a instalação com cuidado, limpeza e respeito ao seu lar, sem
+                            terceirizações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configurador 3D Expresso -->
+    <section class="phygital-experience" id="simulador">
+        <div class="container">
+            <div class="section-title text-center reveal">
+                <h2>Simulador de Ambientes 3D</h2>
+                <p>Interaja com nossa tecnologia. Gire o modelo para ver como a luz reflete e teste instantaneamente
+                    novos acabamentos reais.</p>
+            </div>
+            <div class="configurator-wrapper reveal">
+                <div class="configurator-scene" id="cfgScene">
+                    <div class="configurator-model" id="cfgModel">
+                        <img src="img/Personaliza%C3%A7%C3%A3o%20Mantelli/Madeirado%20Claro.webp"
+                            alt="Simulador 3D Cozinha" id="cfgImage" loading="lazy" decoding="async">
+                        <div class="cfg-glare" id="cfgGlare"></div>
+                    </div>
+                </div>
+                <div class="configurator-controls">
+                    <h3>Troque o Acabamento:</h3>
+                    <div class="cfg-materials">
+                        <button class="cfg-btn active"
+                            data-img="img/Personaliza%C3%A7%C3%A3o%20Mantelli/Madeirado%20Claro.webp"
+                            style="background: linear-gradient(135deg, #d4b595, #b3906a);"
+                            title="Madeirado Claro"></button>
+                        <button class="cfg-btn"
+                            data-img="img/Personaliza%C3%A7%C3%A3o%20Mantelli/Madeirado%20escuro.webp"
+                            style="background: linear-gradient(135deg, #6b4c3a, #4a3324);"
+                            title="Madeirado Escuro"></button>
+                        <button class="cfg-btn" data-img="img/Personaliza%C3%A7%C3%A3o%20Mantelli/Lacca%20Cinza.webp"
+                            style="background: linear-gradient(135deg, #a0a0a0, #737373);" title="Lacca Cinza"></button>
+                        <button class="cfg-btn" data-img="img/Personaliza%C3%A7%C3%A3o%20Mantelli/Lacca%20Clara.webp"
+                            style="background: linear-gradient(135deg, #f0f0f0, #e0e0e0);" title="Lacca Clara"></button>
+                    </div>
+                    <p class="cfg-hint">👉 Passe o cursor livremente (ou arraste o dedo) sobre a foto do ambiente para
+                        rotacioná-lo em 3D e observar o realismo da luz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Projetos -->
+    <section class="projects" id="projetos">
+        <div class="container text-center">
+            <div class="section-title reveal">
+                <h2>Projetos de Referência</h2>
+                <p>Navegue por nosso portfólio de ambientes entregues e inspire-se.</p>
+            </div>
+            <!-- Carrossel Moderno (Swiper style / Coverflow) -->
+            <div class="modern-carousel-wrapper reveal">
+                <div class="modern-carousel-track" id="modernCarousel">
+                    <div class="m-slide">
+                        <img src="img/projeto-cozinha.webp" alt="Cozinha Planejada Moderna" loading="lazy"
+                            decoding="async">
+                        <div class="m-slide-caption">
+                            <h4>Cozinhas</h4>
+                            <p>Design Funcional</p>
+                        </div>
+                    </div>
+                    <div class="m-slide">
+                        <img src="img/projeto-armario.webp" alt="Dormitório Planejado" loading="lazy" decoding="async">
+                        <div class="m-slide-caption">
+                            <h4>Dormitórios</h4>
+                            <p>Conforto Master</p>
+                        </div>
+                    </div>
+                    <div class="m-slide">
+                        <img src="img/projeto-sala.webp" alt="Sala e Home Theater" loading="lazy" decoding="async">
+                        <div class="m-slide-caption">
+                            <h4>Salas e Livings</h4>
+                            <p>Elegância em receber</p>
+                        </div>
+                    </div>
+                    <div class="m-slide">
+                        <img src="img/projeto-escritorio.webp" alt="Corporate" loading="lazy" decoding="async">
+                        <div class="m-slide-caption">
+                            <h4>Linha Comercial</h4>
+                            <p>Durabilidade</p>
+                        </div>
+                    </div>
+                    <div class="m-slide">
+                        <img src="img/projeto-cozinha-provencal.webp" alt="Cozinha Provençal" loading="lazy"
+                            decoding="async">
+                        <div class="m-slide-caption">
+                            <h4>Provençal</h4>
+                            <p>Acabamentos Especiais</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-carousel-nav">
+                    <button class="m-btn" id="mPrevBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="m-btn" id="mNextBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário Dinâmico Modal em Tela Cheia -->
+    <div class="form-modal" id="formModal">
+        <div class="form-modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Descubra o Projeto Ideal</h2>
+                    <p>Responda 4 perguntas rápidas para direcionarmos seu atendimento pelo WhatsApp.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="formProgress"></div>
+                    </div>
+                </div>
+
+                <form id="dynamicForm" class="dynamic-form">
+
+                    <!-- Etapa 1: Que tipo de ambiente -->
+                    <div class="form-step active" id="step1">
+                        <h3>1. Que tipo de projeto você busca?</h3>
+                        <div class="options-grid">
+                            <label class="radio-option">
+                                <input type="radio" name="projectType" value="Residencial (Cozinha, Quarto, etc)"
+                                    required>
+                                <span>Residencial</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="projectType" value="Comercial (Loja, Escritório)">
+                                <span>Comercial</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="projectType" value="Sou Arquiteto/Designer">
+                                <span>Sou Arquiteto/Designer</span>
+                            </label>
+                        </div>
+                        <div class="form-actions right">
+                            <button type="button" class="btn next-step">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 2: Estimação de tempo -->
+                    <div class="form-step" id="step2">
+                        <h3>2. Para quando você precisa dos móveis?</h3>
+                        <div class="options-grid">
+                            <label class="radio-option">
+                                <input type="radio" name="deadline" value="Em até 30 dias" required>
+                                <span>Até 30 dias (Urgente)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="deadline" value="Entre 1 a 3 meses">
+                                <span>1 a 3 meses</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="deadline" value="Apenas orçando / Sem pressa">
+                                <span>Sem pressa / Planejamento</span>
+                            </label>
+                        </div>
+                        <div class="form-actions justify-between">
+                            <button type="button" class="btn btn-outline prev-step">Voltar</button>
+                            <button type="button" class="btn next-step">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 3: Possui planta? -->
+                    <div class="form-step" id="step3">
+                        <h3>3. Você já possui um projeto 3D ou projeto arquitetônico pronto?</h3>
+                        <div class="options-grid">
+                            <label class="radio-option">
+                                <input type="radio" name="hasProject" value="Sim, tenho planta/projeto" required>
+                                <span>Sim, já tenho o projeto completo</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="hasProject" value="Tenho apenas as medidas">
+                                <span>Tenho apenas as medidas</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="hasProject" value="Não, preciso de ajuda do zero">
+                                <span>Não, preciso que a Mantelli desenvolva o modelo</span>
+                            </label>
+                        </div>
+                        <div class="form-actions justify-between">
+                            <button type="button" class="btn btn-outline prev-step">Voltar</button>
+                            <button type="button" class="btn next-step">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 4: Dados Finais -->
+                    <div class="form-step" id="step4">
+                        <h3>4. Para finalizarmos, como podemos te chamar?</h3>
+                        <div class="input-group">
+                            <input type="text" id="userName" name="userName" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-actions justify-between mt-4">
+                            <button type="button" class="btn btn-outline prev-step">Voltar</button>
+                            <button type="submit" class="btn btn-glow whatsapp-btn">
+                                Chamar no WhatsApp
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" style="margin-left:8px;">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Final -->
+    <section class="cta-final text-center reveal">
+        <div class="container">
+            <h2>Pronto para transformar seu ambiente?</h2>
+            <p>Agende uma conversa com nossos especialistas e dê o primeiro passo para o móvel dos seus sonhos.</p>
+            <a href="#cotação" class="btn btn-large btn-glow open-modal-btn">Fazer Cotação Agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <img src="img/logo.webp" alt="Mantelli Móveis" class="footer-logo" loading="lazy">
+                <p>Av. da Saudade, 364 - Vila Assunção, Santo André/SP</p>
+            </div>
+            <div class="footer-col footer-nav">
+                <a href="#sobre">Diferenciais</a>
+                <a href="#empresa">A Mantelli</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#cotação" class="open-modal-btn">Fazer Cotação</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mantelli Móveis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
