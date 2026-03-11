@@ -188,20 +188,21 @@
             background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, 0) 100%);
             transform: skewX(-25deg);
             animation: shine 4s infinite;
+            will-change: transform;
             z-index: 2
         }
 
         @keyframes shine {
             0% {
-                left: -100%
+                transform: translateX(0) skewX(-25deg)
             }
 
             20% {
-                left: 200%
+                transform: translateX(600%) skewX(-25deg)
             }
 
             100% {
-                left: 200%
+                transform: translateX(600%) skewX(-25deg)
             }
         }
 
@@ -348,8 +349,10 @@
         }
     </style>
 
-    <!-- Preload Imagens Hero LCP (Largest Contentful Paint) -->
+    <!-- Preloads Focados em LCP (Fontes e Hero) -->
     <link rel="preconnect" href="https://wa.me">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" as="image" href="img/hero-desktop.webp" media="(min-width: 993px)" fetchpriority="high">
     <link rel="preload" as="image" href="img/hero-mobile.webp" media="(max-width: 992px)" fetchpriority="high">
 

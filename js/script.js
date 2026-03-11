@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Move glare effect
             const glareX = (x / rect.width) * 200 - 100;
             glare.style.transform = `translateX(${glareX}%)`;
-        });
+        }, { passive: true });
 
         scene.addEventListener('mouseleave', () => {
             model.style.transform = `rotateX(0deg) rotateY(0deg)`;
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 model.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
             }
-        });
+        }, { passive: true });
 
         scene.addEventListener('touchend', () => {
             model.style.transform = `rotateX(0deg) rotateY(0deg)`;
