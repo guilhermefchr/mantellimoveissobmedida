@@ -5,13 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     ========================================= */
     const header = document.querySelector('.header');
 
+    let isScrolling = false;
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                isScrolling = false;
+            });
+            isScrolling = true;
         }
-    });
+    }, { passive: true });
 
     /* =========================================
        1.5 Mobile Menu Toggle
@@ -137,11 +144,38 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Auto play
-        setInterval(() => {
-            mCurrentIndex = (mCurrentIndex + 1) % mSlides.length;
-            updateModernCarousel();
-        }, 4000);
+        // Auto play with IntersectionObserver for performance
+        let carouselInterval;
+        const startCarousel = () => {
+            if (!carouselInterval) {
+                carouselInterval = setInterval(() => {
+                    mCurrentIndex = (mCurrentIndex + 1) % mSlides.length;
+                    updateModernCarousel();
+                }, 4000);
+            }
+        };
+        const stopCarousel = () => {
+            if (carouselInterval) {
+                clearInterval(carouselInterval);
+                carouselInterval = null;
+            }
+        };
+        const carouselObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCarousel();
+                } else {
+                    stopCarousel();
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const carouselSection = document.querySelector('.modern-carousel');
+        if (carouselSection) {
+            carouselObserver.observe(carouselSection);
+        } else {
+            startCarousel();
+        }
     }
 
     /* =========================================
